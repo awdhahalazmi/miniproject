@@ -27,6 +27,12 @@ public class TransactionRepo {
         transactionDetails.add(new Transaction(123,88779,2000.6,Type.DEPOSIT,3300.4,"2023,12,24"));
         transactionDetails.add(new Transaction(222,88779,100.6,Type.WITHDRAWL,3300.4,"2023,12,24"));
         transactionDetails.add(new Transaction(123,00123,3000.6,Type.DEPOSIT,5300.4,"2023,12,24"));
+        transactionDetails.add(new Transaction(222,88779,100.6,Type.WITHDRAWL,3300.4,"2023,12,24"));
+        transactionDetails.add(new Transaction(123,00123,3500.6,Type.DEPOSIT,5300.4,"2023,12,24"));
+        transactionDetails.add(new Transaction(222,88779,160.6,Type.WITHDRAWL,3300.4,"2023,12,24"));
+        transactionDetails.add(new Transaction(123,00123,3400.6,Type.DEPOSIT,5300.4,"2023,12,24"));
+        transactionDetails.add(new Transaction(222,88779,100.6,Type.WITHDRAWL,3300.4,"2023,12,24"));
+        transactionDetails.add(new Transaction(123,00123,3000.6,Type.DEPOSIT,5300.4,"2023,12,24"));
 
         return transactionDetails;
 

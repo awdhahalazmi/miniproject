@@ -1,0 +1,35 @@
+<!-- res/layout/toolbox.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <!-- Tool 1 -->
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/search"
+        android:contentDescription="Tool 1" />
+
+    <!-- Tool 2 -->
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/phone"
+        android:contentDescription="Tool 2"
+        android:layout_marginStart="10dp" />
+
+    <!-- Tool 3 -->
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/chat"
+        android:contentDescription="Tool 3"
+        android:layout_marginStart="10dp" />
+
+    <!-- Add more tools as needed -->
+
+</LinearLayout>
+

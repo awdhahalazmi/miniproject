@@ -20,9 +20,9 @@ public static final String TRANSACTION_KEY ="Transaction";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //getSupportActionBar().setTitle("KFH is a great experiance");
 
 
-        getSupportActionBar().setTitle("Transactions");
 
 
 

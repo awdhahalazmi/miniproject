@@ -41,7 +41,7 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
 
 
        holder.transactionTextView.setText(String.valueOf(transactionDetails.get(position).getType()));
-        holder.amountTextView.setText(String.valueOf(transactionDetails.get(position).getAmount()));
+        holder.amountTextView.setText(String.valueOf(transactionDetails.get(position).getAmount())+" KWD");
 
     }
     @Override

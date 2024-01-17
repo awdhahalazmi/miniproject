@@ -27,7 +27,7 @@ public class TransactionDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.transaction_details_layout);
-        getSupportActionBar().setTitle("Details");
+        //getSupportActionBar().setTitle("Details");
 
 
         //new
@@ -42,12 +42,12 @@ public class TransactionDetailActivity extends AppCompatActivity {
         account = findViewById(R.id.account_textView);
 
         //id.setText("ID: " + String.valueOf(transactionname.getId()));
-        type.setText("Transaction Type: " + String.valueOf(transactionname.getType()));
+        type.setText( String.valueOf(transactionname.getType()));
 
-        date.setText("Date of Transaction: " + String.valueOf(transactionname.getDate()));
+        date.setText( String.valueOf(transactionname.getDate()));
 
-        amount.setText("Amount: " + String.valueOf(transactionname.getAmount() ));
-        balance.setText("Total Balance: " + String.valueOf(transactionname.getBalance() ));
+        amount.setText("Amount: " + String.valueOf(transactionname.getAmount() )+" KWD");
+        balance.setText("Total Balance: \n" + String.valueOf(transactionname.getBalance() )+" KWD");
         account.setText("Account Number: " + String.valueOf(transactionname.getAccount() ));
 
 
