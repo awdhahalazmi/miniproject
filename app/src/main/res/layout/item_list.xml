@@ -2,32 +2,51 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="65dp"
+    android:layout_width="370dp"
+    android:layout_height="100dp"
     android:layout_margin="7dp"
-    android:background="#9BCDE4"
-
-
+    android:background="@drawable/card"
     >
 
+
     <TextView
-        android:id="@+id/IdTextView"
+        android:id="@+id/transactionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/AccountTextView"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="40dp"
+        android:text="My Transaction"
+        android:textColor="#E6651414"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/AccountTextView"
+        android:id="@+id/amount_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:fontFamily="monospace"
+
+        android:text="amount_TextView"
+        android:textColor="#E6651414"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/IdTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toEndOf="@+id/transactionTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="36dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/transactionTextView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/money_bag" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
