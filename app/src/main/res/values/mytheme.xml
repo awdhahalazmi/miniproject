@@ -8,7 +8,7 @@
         <item name="android:colorAccent">@color/pastelAccent</item>
     </style>
 
-    <!-- Define pastel colors -->
+
     <color name="pastelBackground">#F0F4C3</color>
     <color name="darkText">#333333</color>
     <color name="pastelPrimary">#81C784</color>

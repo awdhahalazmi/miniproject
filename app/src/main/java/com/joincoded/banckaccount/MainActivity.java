@@ -15,15 +15,12 @@ import com.joincoded.banckaccount.accountData.Transaction;
 public class MainActivity extends AppCompatActivity implements TransactionClickListner {
     RecyclerView RecyclerViewTransaction;
 
-public static final String TRANSACTION_KEY ="Transaction";
+    public static final String TRANSACTION_KEY = "Transaction";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //getSupportActionBar().setTitle("KFH is a great experiance");
-
-
-
 
 
         RecyclerViewTransaction = findViewById(R.id.RecyclerViewTransaction);

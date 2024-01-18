@@ -15,7 +15,7 @@ public class Transaction implements Serializable {
     private double balance;
     private int account;
 
-    public Transaction(int id, int account , double amount, Type type , double balance, String date) {
+    public Transaction(int id, int account, double amount, Type type, double balance, String date) {
         this.id = id;
         this.account = account;
         this.amount = amount;

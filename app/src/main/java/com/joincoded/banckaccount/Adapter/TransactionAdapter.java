@@ -15,56 +15,54 @@ import com.joincoded.banckaccount.accountData.Transaction;
 import java.util.ArrayList;
 
 public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.TransactionHolder> {
-   private static ArrayList  <Transaction> transactionDetails;
+    private static ArrayList<Transaction> transactionDetails;
 
     private static TransactionClickListner transactionClickListner;
 
     public TransactionAdapter(ArrayList<Transaction> transactionDetails, TransactionClickListner transactionClickListner) {
         this.transactionDetails = transactionDetails;
-       this.transactionClickListner=transactionClickListner;
+        this.transactionClickListner = transactionClickListner;
     }
 
     @NonNull
     @Override
     public TransactionHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list,parent ,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list, parent, false);
         TransactionHolder holder = new TransactionHolder(view);
-//        holder.setClickListner(this);
-//
-//        return holder;
 
-       return new TransactionHolder(view);
+
+        return new TransactionHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull TransactionHolder holder, int position) {
 
 
-       holder.transactionTextView.setText(String.valueOf(transactionDetails.get(position).getType()));
-        holder.amountTextView.setText(String.valueOf(transactionDetails.get(position).getAmount())+" KWD");
+        holder.transactionTextView.setText(String.valueOf(transactionDetails.get(position).getType()));
+        holder.amountTextView.setText(String.valueOf(transactionDetails.get(position).getAmount()) + " KWD");
 
     }
+
     @Override
     public int getItemCount() {
-        return transactionDetails.size() ;
+        return transactionDetails.size();
     }
-    public static class TransactionHolder extends  RecyclerView.ViewHolder {
+
+    public static class TransactionHolder extends RecyclerView.ViewHolder {
 
 
         TextView amountTextView;
 
-       TextView transactionTextView;
-
+        TextView transactionTextView;
 
 
         public TransactionHolder(@NonNull View itemView) {
             super(itemView);
-itemView.setOnClickListener(v -> {
-    transactionClickListner.onDetailClicked(transactionDetails.get(getAdapterPosition()));
+            itemView.setOnClickListener(v -> {
+                transactionClickListner.onDetailClicked(transactionDetails.get(getAdapterPosition()));
 
 
-
-});
+            });
 
             transactionTextView = itemView.findViewById(R.id.transactionTextView);
             amountTextView = itemView.findViewById(R.id.amount_textView);
