@@ -4,7 +4,7 @@
         <item name="android:windowBackground">@color/darkText</item>
         <item name="android:textColor">@color/pastelBackground</item>
         <item name="android:colorPrimary">@color/pastelPrimary</item>
-        <item name="android:colorPrimaryDark">@color/pastelPrimaryDark</item>
+        <item name="android:colorPrimaryDark">@color/darkText</item>
         <item name="android:colorAccent">@color/pastelAccent</item>
     </style>
 
